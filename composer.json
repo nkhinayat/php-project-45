@@ -2,17 +2,18 @@
     "name": "hexlet/code",
     "bin": ["bin/brain-games"],
     "description": "First project",
-    "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Nurmukhamed Khinayat",
             "email": "nkhinayat@bk.ru"
         }
     ],
-    "require": {}
-
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+	]
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.0"
+    }
 }
